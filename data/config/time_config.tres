@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="TimeConfig" format=3]
+
+[ext_resource type="Script" path="res://data/definitions/time_config.gd" id="1_cfg"]
+
+[resource]
+script = ExtResource("1_cfg")
+real_seconds_per_day = 360.0
+speeds = Array[int]([1, 2, 4])
+morning_start = 360
+day_start = 600
+evening_start = 1080
+night_start = 1320
+days_per_season = 30
+max_ticks_per_frame = 64

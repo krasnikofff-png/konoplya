@@ -1,0 +1,112 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://ui/hud/hud.gd" id="1_hud"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="Top" type="PanelContainer" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 48.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Margin" type="MarginContainer" parent="Top"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
+
+[node name="Row" type="HBoxContainer" parent="Top/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="DayLabel" type="Label" parent="Top/Margin/Row"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+
+[node name="SpeedLabel" type="Label" parent="Top/Margin/Row"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+
+[node name="Speed" type="HBoxContainer" parent="Top/Margin/Row"]
+layout_mode = 2
+
+[node name="PauseButton" type="Button" parent="Top/Margin/Row/Speed"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+focus_mode = 0
+text = "HUD_BTN_PAUSE"
+
+[node name="X1Button" type="Button" parent="Top/Margin/Row/Speed"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+focus_mode = 0
+text = "HUD_BTN_X1"
+
+[node name="X2Button" type="Button" parent="Top/Margin/Row/Speed"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+focus_mode = 0
+text = "HUD_BTN_X2"
+
+[node name="X4Button" type="Button" parent="Top/Margin/Row/Speed"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(44, 0)
+layout_mode = 2
+focus_mode = 0
+text = "HUD_BTN_X4"
+
+[node name="Spacer" type="Control" parent="Top/Margin/Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="HeroLabel" type="Label" parent="Top/Margin/Row"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+
+[node name="MoneyLabel" type="Label" parent="Top/Margin/Row"]
+unique_name_in_owner = true
+layout_mode = 2
+auto_translate_mode = 2
+
+[node name="Hint" type="Label" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -36.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 14
+theme_override_colors/font_color = Color(1, 1, 1, 0.7)
+text = "HUD_HINT"
+horizontal_alignment = 1
+
+[node name="NotifyLabel" type="Label" parent="."]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 64.0
+offset_right = 250.0
+offset_bottom = 96.0
+grow_horizontal = 2
+auto_translate_mode = 2
+theme_override_colors/font_color = Color(1, 0.95, 0.5, 1)
+horizontal_alignment = 1
+
+[node name="NotifyTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+one_shot = true

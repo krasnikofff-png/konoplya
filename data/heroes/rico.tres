@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="HeroData" format=3]
+
+[ext_resource type="Script" path="res://data/definitions/hero_data.gd" id="1_hero"]
+
+[resource]
+script = ExtResource("1_hero")
+id = &"rico"
+name_key = "HERO_RICO"
+letter_key = "HERO_RICO_LETTER"
+color = Color(1.0, 0.6, 0.0, 1)
+move_speed = 120.0
+specialty_multiplier = 1.5

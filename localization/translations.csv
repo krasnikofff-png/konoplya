@@ -1,0 +1,31 @@
+keys,ru,en
+HERO_FINN,Финн,Finn
+HERO_RICO,Рико,Rico
+HERO_FINN_LETTER,Ф,F
+HERO_RICO_LETTER,Р,R
+CAT_KUSHER,Кушер,Kusher
+PHASE_MORNING,Утро,Morning
+PHASE_DAY,День,Day
+PHASE_EVENING,Вечер,Evening
+PHASE_NIGHT,Ночь,Night
+HUD_DAY,"День %d · %s · %02d:%02d","Day %d · %s · %02d:%02d"
+HUD_SPEED,Скорость ×%d,Speed ×%d
+HUD_PAUSED,Пауза,Paused
+HUD_MONEY,$%d,$%d
+HUD_ACTIVE_HERO,Управляете: %s,Playing as: %s
+HUD_HINT,"WASD / стрелки — ходить · Tab — сменить героя · Пробел — пауза · 1/2/3 — скорость · F5 — сохранить · F9 — загрузить","WASD / arrows — move · Tab — switch hero · Space — pause · 1/2/3 — speed · F5 — save · F9 — load"
+HUD_BTN_PAUSE,❚❚,❚❚
+HUD_BTN_X1,×1,×1
+HUD_BTN_X2,×2,×2
+HUD_BTN_X4,×4,×4
+NOTIFY_SAVED,Игра сохранена,Game saved
+NOTIFY_SAVE_FAILED,Не удалось сохранить игру,Could not save the game
+NOTIFY_LOADED,Игра загружена,Game loaded
+NOTIFY_LOAD_FAILED,Нет сохранения или оно повреждено,No save found or it is damaged
+PROP_GROW_TENT,Гроу-шкаф,Grow tent
+PROP_TABLE,Стол,Table
+PROP_SOIL,Мешки с грунтом,Soil bags
+PROP_BUCKET,Ведро,Bucket
+PROP_TV,Телевизор,TV
+PROP_BIKE,Велосипед Рико,Rico's bike
+PROP_DOOR,Ворота,Garage door

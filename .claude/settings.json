@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/tools/install_godot.sh\" >/dev/null 2>&1 || echo 'Godot не установлен: запусти tools/install_godot.sh'"
+          }
+        ]
+      }
+    ]
+  }
+}
